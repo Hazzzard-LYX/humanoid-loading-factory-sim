@@ -8,6 +8,12 @@
   <img src="assets/banner.png" width="100%">
 </p>
 
+## 🎬 Demo Video
+
+The demo video files are provided through GitHub Releases instead of being stored in the main repository.
+
+➡️ [Download demo video and policy files](../../releases/tag/V1.0)
+
 ## 主要功能
 
 - 使用现有 URDF、STL 和 USD 资源还原完整工厂
