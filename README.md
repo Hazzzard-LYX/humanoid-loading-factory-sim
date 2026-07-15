@@ -5,7 +5,7 @@
 当前完整演示由 12 个加工 cell、24 台冲床、12 台人形机器人和 8 台 AGV 组成。机器人每次左右手各搬运一根铝管；AGV 负责空箱复用、半成品转运、原料补给和最终成品入库。
 
 <p align="center">
-  <img src="asserts/banner.png" width="100%">
+  <img src="assets/banner.png" width="100%">
 </p>
 
 ## 主要功能
