@@ -12,7 +12,7 @@
 
 The demo video files are provided through GitHub Releases instead of being stored in the main repository.
 
-➡️ [Download demo video and policy files](../../releases/tag/V1.0)
+➡️ [Download demo video](../../releases/tag/V1.0)
 
 ## 主要功能
 
