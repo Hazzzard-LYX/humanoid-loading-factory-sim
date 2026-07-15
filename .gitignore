@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pid
+.DS_Store
+.idea/
+.vscode/
+logs/
+scenes/*.usd
+!assets/**/*.usd
+

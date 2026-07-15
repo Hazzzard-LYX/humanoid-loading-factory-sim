@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="HIK-Q2-400D">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.196959198424E-16 -1.11022302462516E-16 0.137816360782616"
+        rpy="0 0 0" />
+      <mass
+        value="108.944425120091" />
+      <inertia
+        ixx="3.4543314678289"
+        ixy="-5.42101086242752E-17"
+        ixz="-3.27318646032458E-17"
+        iyy="6.15885215463657"
+        iyz="-1.75436626861531E-16"
+        izz="8.11779407029287" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HIK-Q2-400D/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HIK-Q2-400D/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="box">
+    <inertial>
+      <origin
+        xyz="-4.33680868994202E-17 1.66533453693773E-16 0.279543743631679"
+        rpy="0 0 0" />
+      <mass
+        value="21.1655419236907" />
+      <inertia
+        ixx="0.257841341441918"
+        ixy="2.71050543121379E-17"
+        ixz="-4.0124276405974E-17"
+        iyy="0.629671563429278"
+        iyz="-1.08739108323356E-16"
+        izz="0.822485296184365" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HIK-Q2-400D/meshes/box.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HIK-Q2-400D/meshes/box.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="box-lift"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="box" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.06"
+      effort="2000"
+      velocity="0.08" />
+  </joint>
+</robot>
